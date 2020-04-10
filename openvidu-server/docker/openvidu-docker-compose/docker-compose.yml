@@ -33,7 +33,7 @@ services:
             - OPENVIDU_RECORDING=true
             - KMS_URIS=["ws://localhost:8888/kurento"]
             - COTURN_IP=${OPENVIDU_DOMAIN_OR_PUBLIC_IP}
-            - COTURN_REDIS_IP=127.0.0.1
+            - COTURN_REDIS_IP=redis
 
     kms:
         image: ${KMS_IMAGE:-kurento/kurento-media-server-dev:6.13.1}
